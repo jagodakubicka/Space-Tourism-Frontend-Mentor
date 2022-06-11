@@ -1,4 +1,131 @@
+$dark-blue: #0b0d17;
+$light-blue: #d0d6f9;
+$white: #fff;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+@mixin heading1 {
+  color: $white;
+  font-size: 150px;
+  font-family: 'Bellefair', serif;
+}
+
+@mixin heading2 {
+  color: $white;
+  font-size: 100px;
+  font-family: 'Bellefair', serif;
+}
+
+@mixin heading3 {
+  color: $white;
+  font-size: 56px;
+  font-family: 'Bellefair', serif;
+}
+
+@mixin heading4 {
+  color: $white;
+  font-size: 32px;
+  font-family: 'Bellefair', serif;
+}
+
+@mixin heading5 {
+  color: $light-blue;
+  font-size: 28px;
+  letter-spacing: 4.75;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+@mixin Subheading1 {
+  color: $white;
+  font-size: 28px;
+  font-family: 'Bellefair', serif;
+}
+
+@mixin Subheading2 {
+  color: $white;
+  font-size: 14px;
+  letter-spacing: 2.35;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+@mixin navtext {
+  color: $white;
+  font-size: 16px;
+  letter-spacing: 2.7;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: black;
-  color: aliceblue;
+  background-color: $dark-blue;
+  color: $white;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.home-page {
+  background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__list {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 40px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 35vw;
+      background-color: $light-blue;
+      opacity: 0.3;
+      top: 50%;
+      right: 95%;
+    }
+  }
+  &__item {
+    @include navtext;
+    list-style: none;
+    margin: 20px;
+  }
+  &__link {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    span {
+      font-weight: bolder;
+      margin-right: 5px;
+    }
+  }
 }
