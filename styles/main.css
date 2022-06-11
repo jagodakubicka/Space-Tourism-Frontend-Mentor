@@ -113,15 +113,17 @@ img {
 .home-intro {
   margin: 0 auto;
   max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  display: flex;
+  flex-direction: row;
   padding: 6em;
   padding-top: 18em;
+  justify-content: space-between;
 }
 .home-intro__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 50%;
 }
 .home-intro__topText {
   color: #d0d6f9;
@@ -145,7 +147,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -20%;
   padding-top: 2em;
 }
 .home-intro__link {
@@ -162,4 +163,61 @@ img {
 .home-intro__link:hover {
   outline: 35px solid rgba(255, 255, 255, 0.2);
   transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 912px) {
+  .home-page {
+    background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+  }
+
+  .nav__list::before {
+    display: none;
+  }
+  .nav__link span {
+    display: none;
+  }
+
+  .home-intro {
+    flex-direction: column;
+    padding-top: 6em;
+  }
+  .home-intro__content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .home-intro__bottomText {
+    margin: 0 auto;
+    max-width: 60%;
+  }
+  .home-intro__explore {
+    padding-top: 4em;
+  }
+}
+@media (max-width: 550px) {
+  .home-page {
+    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .nav__link {
+    display: flex;
+  }
+  .nav__link span {
+    display: block;
+  }
+  .nav__toggleBtn {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+
+  .home-intro__bottomText {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

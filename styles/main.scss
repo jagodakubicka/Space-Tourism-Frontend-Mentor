@@ -164,14 +164,16 @@ img {
 .home-intro {
   margin: 0 auto;
   max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  display: flex;
+  flex-direction: row;
   padding: 6em;
   padding-top: 18em;
+  justify-content: space-between;
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 50%;
   }
   &__topText {
     @include heading5;
@@ -190,7 +192,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -20%;
     padding-top: 2em;
   }
   &__link {
@@ -204,6 +205,70 @@ img {
     &:hover {
       outline: 35px solid rgba(255, 255, 255, 0.2);
       transition: all 0.4s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 912px) {
+  .home-page {
+    background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+  }
+  .nav {
+    &__list {
+      &::before {
+        display: none;
+      }
+    }
+    &__link {
+      span {
+        display: none;
+      }
+    }
+  }
+  .home-intro {
+    flex-direction: column;
+    padding-top: 6em;
+    &__content {
+      max-width: 100%;
+      text-align: center;
+    }
+    &__bottomText {
+      margin: 0 auto;
+      max-width: 60%;
+    }
+    &__explore {
+      padding-top: 4em;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .home-page {
+    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+  }
+  .nav {
+    &__list {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    &__link {
+      display: flex;
+      span {
+        display: block;
+      }
+    }
+    &__toggleBtn {
+      display: block;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+    }
+  }
+  .home-intro {
+    &__bottomText {
+      max-width: 100%;
     }
   }
 }
