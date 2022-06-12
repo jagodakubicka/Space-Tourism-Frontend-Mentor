@@ -217,6 +217,107 @@ img {
   }
 }
 
+.page-destination {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  &__title {
+    @include Subheading2;
+    text-transform: uppercase;
+    padding: 2em;
+    letter-spacing: 5px;
+    span {
+      opacity: 0.6;
+      margin-right: 10px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+  }
+  &__img {
+    width: 50%;
+    min-width: 500px;
+    margin: 0 auto;
+  }
+  &__directions {
+    width: 50%;
+    min-width: 300px;
+    padding: 2em;
+    margin: 0 auto;
+  }
+  &__planets {
+    ul {
+      display: flex;
+      li {
+        padding: 1em;
+        list-style: none;
+        button {
+          @include navtext;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          background: none;
+          border: none;
+          position: relative;
+          cursor: pointer;
+          &::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: $white;
+            bottom: -8px;
+            left: 0;
+            display: none;
+          }
+          &:hover::after {
+            content: '';
+            opacity: 0.5;
+            display: block;
+          }
+          &:active::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &__planet {
+    @include heading2;
+    text-transform: uppercase;
+  }
+  &__desc {
+    color: $light-blue;
+    opacity: 0.7;
+    line-height: 1.5;
+    padding-bottom: 2em;
+  }
+  &__details {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    width: 100%;
+  }
+  &__info {
+    width: 50%;
+  }
+  &__subtitle {
+    @include Subheading2;
+    text-transform: uppercase;
+    padding-top: 1em;
+    color: $light-blue;
+    opacity: 0.8;
+  }
+  &__numbers {
+    @include Subheading1;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+  }
+}
+
 @media (max-width: 912px) {
   .page {
     background-size: 100% 100%;

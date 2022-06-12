@@ -173,6 +173,118 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
+.page-destination {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-destination__title {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2.35;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  padding: 2em;
+  letter-spacing: 5px;
+}
+.page-destination__title span {
+  opacity: 0.6;
+  margin-right: 10px;
+}
+.page-destination__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+.page-destination__img {
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+}
+.page-destination__directions {
+  width: 50%;
+  min-width: 300px;
+  padding: 2em;
+  margin: 0 auto;
+}
+.page-destination__planets ul {
+  display: flex;
+}
+.page-destination__planets ul li {
+  padding: 1em;
+  list-style: none;
+}
+.page-destination__planets ul li button {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2.7;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.page-destination__planets ul li button::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  bottom: -8px;
+  left: 0;
+  display: none;
+}
+.page-destination__planets ul li button:hover::after {
+  content: "";
+  opacity: 0.5;
+  display: block;
+}
+.page-destination__planets ul li button:active::after {
+  opacity: 1;
+}
+.page-destination__planet {
+  color: #fff;
+  font-size: 100px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+.page-destination__desc {
+  color: #d0d6f9;
+  opacity: 0.7;
+  line-height: 1.5;
+  padding-bottom: 2em;
+}
+.page-destination__details {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  width: 100%;
+}
+.page-destination__info {
+  width: 50%;
+}
+.page-destination__subtitle {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2.35;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-top: 1em;
+  color: #d0d6f9;
+  opacity: 0.8;
+}
+.page-destination__numbers {
+  color: #fff;
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  padding-top: 0.5em;
+}
+
 @media (max-width: 912px) {
   .page {
     background-size: 100% 100%;
