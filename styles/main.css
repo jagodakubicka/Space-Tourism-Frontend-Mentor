@@ -225,7 +225,7 @@ img {
 }
 .page-destination__directions {
   width: 50%;
-  min-width: 300px;
+  min-width: 500px;
   padding: 2em;
   margin: 0 auto;
 }
@@ -349,6 +349,17 @@ img {
   .home-intro__explore {
     padding-top: 4em;
   }
+
+  .page-destination__img {
+    width: auto;
+    min-width: none;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .page-destination__img img {
+    max-width: 80%;
+  }
 }
 @media (max-width: 550px) {
   .page__home {
@@ -407,5 +418,30 @@ img {
   }
   .home-intro__explore {
     transform: scale(0.8);
+  }
+
+  .page-destination__img {
+    min-width: 250px;
+  }
+  .page-destination__directions {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-destination__planets ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-destination__planets ul li {
+    width: 50%;
+  }
+  .page-destination__planet {
+    font-size: 60px;
+  }
+  .page-destination__details {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

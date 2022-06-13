@@ -266,7 +266,7 @@ img {
   }
   &__directions {
     width: 50%;
-    min-width: 300px;
+    min-width: 500px;
     padding: 2em;
     margin: 0 auto;
   }
@@ -383,6 +383,18 @@ img {
       padding-top: 4em;
     }
   }
+  .page-destination {
+    &__img {
+      width: auto;
+      min-width: none;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 80%;
+      }
+    }
+  }
 }
 
 @media (max-width: 550px) {
@@ -443,6 +455,34 @@ img {
     }
     &__explore {
       transform: scale(0.8);
+    }
+  }
+  .page-destination {
+    &__img {
+      min-width: 250px;
+    }
+    &__directions {
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__planets {
+      ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        li {
+          width: 50%;
+        }
+      }
+    }
+    &__planet {
+      font-size: 60px;
+    }
+    &__details {
+      flex-direction: column;
     }
   }
 }
