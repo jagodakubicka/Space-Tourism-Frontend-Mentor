@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -47,8 +50,118 @@
           <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="" />
         </button>
       </nav>
-      <div class="page-crew"></div>
+
+      <div class="page-crew">
+        <div class="page-destination__title">
+          <h2><span>02</span> meet your crew</h2>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__position">commander</p>
+                <h2 class="swiper-slide__name">douglas hurley</h2>
+                <p class="swiper-slide__desc">
+                  Douglas Gerald Hurley is an American engineer, former Marine
+                  Corps pilot and former NASA astronaut. He launched into space
+                  for the third time as commander of Crew Dragon Demo-2.
+                </p>
+              </div>
+              <div class="swiper-slide__img">
+                <img
+                  src="/starter-code/assets/crew/image-douglas-hurley.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__position">mission specialist</p>
+                <h2 class="swiper-slide__name">MARK SHUTTLEWORTH</h2>
+                <p class="swiper-slide__desc">
+                  Mark Richard Shuttleworth is the founder and CEO of Canonical,
+                  the company behind the Linux-based Ubuntu operating system.
+                  Shuttleworth became the first South African to travel to space
+                  as a space tourist.
+                </p>
+              </div>
+              <div class="swiper-slide__img">
+                <img
+                  src="/starter-code/assets/crew/image-mark-shuttleworth.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__position">pilot</p>
+                <h2 class="swiper-slide__name">Victor Glover</h2>
+                <p class="swiper-slide__desc">
+                  Pilot on the first operational flight of the SpaceX Crew
+                  Dragon to the International Space Station. Glover is a
+                  commander in the U.S. Navy where he pilots an F/A-18.He was a
+                  crew member of Expedition 64, and served as a station systems
+                  flight engineer.
+                </p>
+              </div>
+              <div class="swiper-slide__img">
+                <img
+                  src="/starter-code/assets/crew/image-victor-glover.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__position">Flight Engineer</p>
+                <h2 class="swiper-slide__name">Anousheh Ansari</h2>
+                <p class="swiper-slide__desc">
+                  Anousheh Ansari is an Iranian American engineer and co-founder
+                  of Prodea Systems. Ansari was the fourth self-funded space
+                  tourist, the first self-funded woman to fly to the ISS, and
+                  the first Iranian in space.
+                </p>
+              </div>
+              <div class="swiper-slide__img">
+                <img
+                  src="/starter-code/assets/crew/image-anousheh-ansari.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </div>
     <script src="/starter-code/main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
   </body>
 </html>

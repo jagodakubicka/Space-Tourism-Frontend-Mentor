@@ -337,7 +337,21 @@ img {
     padding-top: 0.5em;
   }
 }
+.swiper {
+  max-width: 1000px;
+  height: 100%;
 
+  &-pagination {
+    color: #d0d6f9;
+  }
+  &-slide {
+    display: flex;
+    padding: 2em;
+    &__content {
+      width: 50%;
+    }
+  }
+}
 @media (max-width: 912px) {
   .page {
     background-size: 100% 100%;
