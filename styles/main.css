@@ -309,7 +309,7 @@ img {
   height: 100%;
 }
 .swiper-pagination {
-  color: #d0d6f9;
+  color: #fff;
 }
 .swiper-slide {
   display: flex;
@@ -317,6 +317,34 @@ img {
 }
 .swiper-slide__content {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+.swiper-slide__position {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  opacity: 0.6;
+}
+.swiper-slide__name {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  padding: 0.5em 0;
+  font-size: 40px;
+}
+.swiper-slide__desc {
+  color: #d0d6f9;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+.swiper-slide__img {
+  padding: 2em;
 }
 
 @media (max-width: 912px) {
