@@ -348,7 +348,6 @@ img {
     color: $light-blue;
   }
   .swiper-pagination {
-    color: $white;
     &-bullet {
       background: $light-blue;
       width: 12px;
@@ -380,7 +379,7 @@ img {
       @include heading4;
       text-transform: uppercase;
       padding: 0.5em 0;
-      font-size: 40px;
+      font-size: 32px;
     }
     &__desc {
       color: $light-blue;
