@@ -10,6 +10,10 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/styles/main.css" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -49,7 +53,109 @@
           <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="" />
         </button>
       </nav>
+      <div class="page-technology">
+        <div class="page-destination__title">
+          <h2><span>03</span> SPACE LAUNCH 101</h2>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__position">THE TERMINOLOGY…</p>
+                <h2 class="swiper-slide__name">LAUNCH VEHICLE</h2>
+                <p class="swiper-slide__desc">
+                  A launch vehicle or carrier rocket is a rocket-propelled
+                  vehicle used to carry a payload from Earth's surface to space,
+                  usually to Earth orbit or beyond. Our WEB-X carrier rocket is
+                  the most powerful in operation. Standing 150 metres tall, it's
+                  quite an awe-inspiring sight on the launch pad!
+                </p>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-slide__img">
+                <img
+                  src="/starter-code/assets/technology/image-launch-vehicle-landscape.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__position">TERMINOLOGY</p>
+                <h2 class="swiper-slide__name">SPACEPORT</h2>
+                <p class="swiper-slide__desc">
+                  A spaceport or cosmodrome is a site for launching (or
+                  receiving) spacecraft, by analogy to the seaport for ships or
+                  airport for aircraft. Based in the famous Cape Canaveral, our
+                  spaceport is ideally situated to take advantage of the Earth’s
+                  rotation for launch.
+                </p>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-slide__img">
+                <img
+                  src="/starter-code/assets/technology/image-spaceport-landscape.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <div class="swiper-pagination"></div>
+                <p class="swiper-slide__position">THE TERMINOLOGY…</p>
+                <h2 class="swiper-slide__name">SPACE CAPSULE</h2>
+                <p class="swiper-slide__desc">
+                  A space capsule is an often-crewed spacecraft that uses a
+                  blunt-body reentry capsule to reenter the Earth's atmosphere
+                  without wings. Our capsule is where you'll spend your time
+                  during the flight. It includes a space gym, cinema, and plenty
+                  of other activities to keep you entertained.
+                </p>
+              </div>
+              <div class="swiper-slide__img">
+                <img
+                  src="/starter-code/assets/technology/image-space-capsule-landscape.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </div>
     <script src="/starter-code/main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
   </body>
 </html>
