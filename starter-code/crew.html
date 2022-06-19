@@ -139,10 +139,6 @@
           </div>
           <!-- If we need pagination -->
           <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
@@ -155,15 +151,20 @@
 
         pagination: {
           el: '.swiper-pagination',
-        },
-
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          type: 'bullets',
+          clickable: 'true',
         },
 
         scrollbar: {
           el: '.swiper-scrollbar',
+        },
+
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true,
+        },
+        autoplay: {
+          delay: 10000,
         },
       });
     </script>
