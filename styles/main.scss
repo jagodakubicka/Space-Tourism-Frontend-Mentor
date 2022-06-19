@@ -341,14 +341,11 @@ img {
   .swiper {
     max-width: 1000px;
     height: 700px;
-
-    &-button-prev {
-      color: $light-blue;
-    }
-    &-button-next {
-      color: $light-blue;
-    }
+    position: relative;
     .swiper-pagination {
+      position: absolute;
+      left: -300px;
+      bottom: 200px;
       &-bullet {
         background: $light-blue;
         width: 12px;
@@ -411,7 +408,7 @@ img {
         background: transparent;
         width: 48px;
         height: 48px;
-        border: 1px solid $light-blue;
+        border: 2px solid $light-blue;
         margin: 1em;
       }
     }
