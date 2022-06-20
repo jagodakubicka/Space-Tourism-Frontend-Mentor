@@ -207,6 +207,8 @@ img {
   text-transform: uppercase;
   padding: 2em;
   letter-spacing: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .page-destination__title span {
   opacity: 0.6;
