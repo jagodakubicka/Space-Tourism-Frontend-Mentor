@@ -58,15 +58,16 @@
             <img
               src="/starter-code/assets/destination/image-moon.webp"
               alt="moon"
+              class="page-destination__planetImg"
             />
           </div>
           <div class="page-destination__directions">
             <div class="page-destination__planets">
               <ul>
-                <li><button type="button">Moon</button></li>
-                <li><button type="button">Mars</button></li>
-                <li><button type="button">Europa</button></li>
-                <li><button type="button">Titan</button></li>
+                <li><button type="button" id="btnMoon">Moon</button></li>
+                <li><button type="button" id="btnMars">Mars</button></li>
+                <li><button type="button" id="btnEuropa">Europa</button></li>
+                <li><button type="button" id="btnTitan">Titan</button></li>
               </ul>
             </div>
             <h2 class="page-destination__planet">Moon</h2>
@@ -79,11 +80,15 @@
             <div class="page-destination__details">
               <div class="page-destination__info">
                 <p class="page-destination__subtitle">AVG. DISTANCE</p>
-                <p class="page-destination__numbers">384,400 KM</p>
+                <p class="page-destination__numbers page-destination__distance">
+                  384,400 KM
+                </p>
               </div>
               <div class="page-destination__info">
                 <p class="page-destination__subtitle">Est. travel time</p>
-                <p class="page-destination__numbers">3 days</p>
+                <p class="page-destination__numbers page-destination__time">
+                  3 days
+                </p>
               </div>
             </div>
           </div>
