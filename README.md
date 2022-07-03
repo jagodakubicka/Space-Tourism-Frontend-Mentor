@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/jagodakubicka/Space-Tourism-Frontend-Mentor)
-- Live Site URL: [Add live site URL here](https://space-tourism-frontend-mentor-one.vercel.app/index.html)
+- [Github](https://github.com/jagodakubicka/Space-Tourism-Frontend-Mentor)
+- [Live site](https://space-tourism-frontend-mentor-one.vercel.app/index.html)
 
 ## Author
 
