@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-(/webscreenshot.png)
+(./webscreenshot.png)
 
 ### Links
 
