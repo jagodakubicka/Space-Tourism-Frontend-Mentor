@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./webscreenshot.png)
+![Design preview for the Personal portfolio](./webscreenshot.png)
 
 ### Links
 
