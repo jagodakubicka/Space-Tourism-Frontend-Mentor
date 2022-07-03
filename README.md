@@ -2,10 +2,13 @@
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+### Screenshot
+
+![Design preview for the Personal portfolio](./webscreenshot.png)
+
 ## Table of contents
 
 - [The challenge](#the-challenge)
-- [Screenshot](#screenshot)
 - [Links](#links)
 - [Author](#author)
 
@@ -16,10 +19,6 @@ Users should be able to:
 - View the optimal layout for each of the website's pages depending on their device's screen size
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
-
-### Screenshot
-
-![Design preview for the Personal portfolio](./webscreenshot.png)
 
 ### Links
 
