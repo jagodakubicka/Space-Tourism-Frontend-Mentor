@@ -11,6 +11,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [The challenge](#the-challenge)
 - [Links](#links)
 - [Author](#author)
+- [Next Steps](#next-steps)
 
 ### The challenge
 
@@ -29,3 +30,8 @@ Users should be able to:
 
 - Website - [Jagoda Kubicka](https://jagoda-kubicka.vercel.app/)
 - Frontend Mentor - [@jagodakubicka](https://www.frontendmentor.io/profile/jagodakubicka)
+
+
+## next-steps
+
+using JSON file data
