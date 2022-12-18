@@ -76,6 +76,9 @@ body {
   padding: 0;
   font-size: 16px;
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 img {
@@ -96,9 +99,7 @@ img {
     background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
   }
 .page {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  
   min-height: 100vh;
   width: 100%;
 }
