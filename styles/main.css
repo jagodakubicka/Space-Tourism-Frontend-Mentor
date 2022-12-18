@@ -469,6 +469,14 @@ img {
   height: auto;
 }
 
+.active {
+  display: block;
+}
+
+.disabled {
+  display: none;
+}
+
 @media (max-width: 912px) {
   .page {
     background-size: 100% 100%;

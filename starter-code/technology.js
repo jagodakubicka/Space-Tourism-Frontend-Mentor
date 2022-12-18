@@ -1,28 +1,5 @@
 // technology page
 
-let buttons = document.querySelectorAll('.tech-btn');
-let contents = document.querySelectorAll('.page-technology__contentCtn');
-
-function hideContent(){
-  contents.forEach(function(el){
-    el.style.display = 'none';
-  });
-}
-hideContent();
-
-buttons.forEach(function(btn) {
-  
-  btn.onclick = () => {
-    hideContent();
-
-    let button_item = btn.dataset.item;
-    contents.forEach(function(el_box){
-      if (el_box.dataset.item === button_item){
-        el_box.style.display='block'
-      }
-    })
-  }
-})
 
 
 function fetchData(){
