@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
-    <div class="page page__destination">
-      <nav class="nav">
+  <body class="destination-body" data-barba="wrapper">
+     <nav class="nav">
         <img
           src="/starter-code/assets/shared/logo.svg"
           alt=""
@@ -47,6 +46,8 @@
           <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="" />
         </button>
       </nav>
+    <div class="page page__destination" data-barba="container" data-barba-namespace="destination">
+     
       <div class="page-destination">
         <div class="page-destination__title">
           <h2><span>01</span> Pick your destination</h2>
@@ -93,7 +94,16 @@
         </div>
       </div>
     </div>
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="/starter-code/main.js"></script>
     <script src="/starter-code/destination.js"></script>
+    <script src="/animation.js"></script>
   </body>
 </html>

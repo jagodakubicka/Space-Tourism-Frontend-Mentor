@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
-    <div class="page page__technology">
+  <body class="technology-body" data-barba="wrapper">
       <nav class="nav">
         <img
           src="/starter-code/assets/shared/logo.svg"
@@ -51,6 +50,8 @@
           <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="" />
         </button>
       </nav>
+    <div class="page page__technology" data-barba="container" data-barba-namespace="technology">
+    
       <div class="page-technology">
         <div class="page-destination__title">
           <h2><span>03</span> SPACE LAUNCH 101</h2>
@@ -62,27 +63,20 @@
             <button class="tech-btn" id="capsuleButton" type="button" data-id="3">3</button>
           </div>
           <div class="page-technology__content" id="page-technology__content">
-            <!-- <p class="page-technology__title">The terminology...</p>
-            <p class="page-technology__mainTitle">Launch vehicle</p>
-            <p class="page-technology__desc">
-              A launch vehicle or carrier rocket is a rocket-propelled vehicle
-              used to carry a payload from Earth's surface to space, usually to
-              Earth orbit or beyond. Our WEB-X carrier rocket is the most
-              powerful in operation. Standing 150 metres tall, it's quite an
-              awe-inspiring sight on the launch pad!
-            </p>
-          </div>
-          <div class="page-technology__img">
-            <img
-              id="tech-img"
-              src="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
-              alt=""
-            />
-          </div> -->
+         
         </div>
       </div>
     </div>
     <script src="/starter-code/main.js"></script>
     <script src="/starter-code/technology.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+      <script src="/animation.js"></script>
   </body>
 </html>
