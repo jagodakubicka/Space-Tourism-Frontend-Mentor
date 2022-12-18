@@ -9,9 +9,18 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 ## Table of contents
 
 - [The challenge](#the-challenge)
+- [Technologies used](#Technologies-used)
 - [Links](#links)
 - [Author](#author)
 - [Next Steps](#next-steps)
+
+### Technologies used
+- JavaScript
+- SCSS
+- HTML
+- GSAP
+- Barba.js
+- Swiper.js
 
 ### The challenge
 
