@@ -439,6 +439,9 @@ img {
       &:hover {
         outline: 2px solid $light-blue;
       }
+      &:focus {
+        outline: 2px solid $light-blue;
+      }
     }
   }
   &__content {
@@ -495,21 +498,22 @@ img {
   display: none;
 }
 @media (max-width: 912px) {
+  .homepage-body {
+      background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+    }
+     .destination-body {
+      background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+    }
+    .crew-body{
+      background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+    }
+    .technology-body {
+      background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+    }
   .page {
     background-size: 100% 100%;
     height: 100%;
-    &__home {
-      background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
-    }
-    &__destination {
-      background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
-    }
-    &__crew {
-      background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
-    }
-    &__technology {
-      background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
-    }
+    
   }
   .nav {
     &__list {

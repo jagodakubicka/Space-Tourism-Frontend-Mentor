@@ -416,6 +416,9 @@ img {
 .page-technology__buttons button:hover {
   outline: 2px solid #d0d6f9;
 }
+.page-technology__buttons button:focus {
+  outline: 2px solid #d0d6f9;
+}
 .page-technology__content {
   display: flex;
   flex-direction: column;
@@ -478,21 +481,21 @@ img {
 }
 
 @media (max-width: 912px) {
+  .homepage-body {
+    background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+  }
+  .destination-body {
+    background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+  }
+  .crew-body {
+    background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+  }
+  .technology-body {
+    background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+  }
   .page {
     background-size: 100% 100%;
     height: 100%;
-  }
-  .page__home {
-    background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
-  }
-  .page__destination {
-    background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
-  }
-  .page__crew {
-    background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
-  }
-  .page__technology {
-    background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
   }
   .nav__list {
     width: -webkit-max-content;
