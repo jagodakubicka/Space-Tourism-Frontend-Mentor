@@ -470,7 +470,7 @@ img {
 }
 
 .active {
-  display: block;
+  display: flex;
 }
 
 .disabled {
